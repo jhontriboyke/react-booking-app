@@ -1,0 +1,143 @@
+.header {
+    background-color: #003580;
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.headerContainer {
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0px 100px 0px;
+}
+
+.headerContainer[data-type='list'] {
+    margin: 20px 0 0 0;
+}
+
+.headerList {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.headerListItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerListItem.active {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.headerTitle {
+    font-size: 2.5rem;
+}
+
+.headerDesc {
+    margin: 20px 0;
+}
+
+.headerBtn {
+    color: white;
+    background-color: #0071c2;
+    font-weight: 500;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.headerSearch {
+    height: 30px;
+    background-color: white;
+    border: 3px solid #febb02;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px 0;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -24px;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.headerIcon {
+    color: #333;
+}
+
+.headerSearchItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerSearchInput {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.headerSearchInput::placeholder {
+    font-family: inherit;
+    color: #aaa;
+}
+
+.headerSearchText {
+    color: #aaa;
+}
+
+.date {
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+}
+
+.options {
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    color: lightgray;
+    border-radius: 5px;
+    box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.optionItem {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.optionCounter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: black;
+}
+
+.optionCounterButton {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #0071c2;
+    color: #0071c2;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.optionCounterButton:hover {
+    background-color: #056cb5;
+    color: white;
+}
+
+.optionCounterButton:active {
+    transform: scale(0.95);
+}

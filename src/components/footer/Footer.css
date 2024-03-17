@@ -1,0 +1,31 @@
+.footer {
+    width: 100%;
+    max-width: 1024px;
+    font-size: 12px;
+    margin: auto;
+    padding-block: 50px;
+}
+
+.footer ul {
+    list-style-type: none;
+    width: 200px;
+    text-align: center;
+}
+
+.footerLists {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.footerList li {
+    margin-bottom: 10px;
+    color: #003580;
+    cursor: pointer;
+}
+
+.footerList li:hover {
+    color: #001e48;
+    font-weight: bold;
+}

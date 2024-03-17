@@ -1,0 +1,76 @@
+.slideshowContainer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    color: white;
+    display: grid;
+    place-items: center;
+    animation: fadeIn 0.25s ease-in;
+    animation-fill-mode: forwards;
+}
+
+.slideshowWrapper {
+    width: 1024px;
+    height: 500px;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.imageWrapper {
+    width: 100%;
+    height: 100%;
+    background-color: tomato;
+    display: flex;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.imageWrapper img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.slideshowWrapper button {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 60px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    transition: font-size 0.1s;
+}
+
+.slideshowWrapper button:hover {
+    font-size: 28px;
+}
+
+.slideshowWrapper button:active {
+    font-size: 25px;
+}
+
+.slideshowWrapper button.left {
+    left: 0;
+}
+
+.slideshowWrapper button.right {
+    right: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

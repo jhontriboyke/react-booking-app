@@ -1,0 +1,35 @@
+.propertyList {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.propertyListItem {
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.propertyListItem img {
+    display: block;
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.78) sepia(0.12) grayscale(0.15);
+    transition: filter 0.3s;
+}
+
+.propertyListItem:hover > img {
+    filter: brightness(0.95) sepia(0) grayscale(0.05);
+}
+
+.propertyListTitles h3 {
+    font-size: 16px;
+}
+
+.propertyListTitles h4 {
+    font-size: 12px;
+    font-weight: 400;
+}

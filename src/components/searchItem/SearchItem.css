@@ -1,0 +1,128 @@
+.searchItem {
+    width: 100%;
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.searchItemImg {
+    width: 200px;
+    height: 180px;
+}
+
+.searchItemImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.searchItemDesc {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.descHeading {
+    color: #0071c2;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.descLocation {
+    font-size: 12px;
+}
+
+.descInterior {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.descBonus {
+    font-size: 12px;
+    background-color: #369936;
+    color: white;
+    max-width: max-content;
+    padding: 3px 4px;
+    border-radius: 6px;
+}
+
+.descFeatures {
+    font-size: 12px;
+}
+
+.descCancelOpt {
+    color: #369936;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.descCancelDesc {
+    font-size: 12px;
+    color: #369936;
+}
+
+.searchItemDetail {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.detailRating {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.ratingText {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.ratingNumber {
+    background-color: #0562a5;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.detailPrice {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.detailPrice .priceButton {
+    text-align: center;
+}
+
+.priceNumber {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.priceText {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.priceButton {
+    margin-top: 10px;
+    background-color: #0071c2;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.priceButton:hover {
+    background-color: #0562a5;
+}
